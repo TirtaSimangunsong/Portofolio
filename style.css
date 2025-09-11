@@ -1,7 +1,22 @@
+*{
+
+}
+
+
 .Judul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavBar{
     text-align: center;
 }
 
-h2{
+.About{
+
+}
+
+.Contact{
 
 }
