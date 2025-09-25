@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,48 +9,125 @@
 }
 
 body {
-    background-color: #0a1a2f;
-    font-family: Arial, sans-serif;
+    background-color: #0a192f; 
+    font-family: 'Poppins', sans-serif;
+    color: #ccd6f6;
 }
 
+/* Navigation Bar */
 .NavBar {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    background-color: rgb(188, 188, 188);
-    padding: 10px;
+    gap: 30px; 
+    background-color: rgba(10, 25, 47, 0.85); 
+    padding: 15px;
+    position: sticky; 
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #133040;
 }
 
 .NavBar a {
     text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
+    color: #ccd6f6;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 .NavBar a:hover {
-    color: blue;
+    color: #64ffda;
 }
 
+/* Title */
 .Judul {
-    padding: 40px;
-    border-radius: 12px;
-    max-width: 600px;
-    margin: 80px auto;
+    padding: 20px;
+    max-width: 800px;
+    margin: 100px auto;
     text-align: center;
 }
 
 .Judul h1 {
-    
-    font-size: 60px;
-    font-weight: 800;
-    color: #00aaff;
+    font-size: 70px;
+    font-weight: 700;
+    color: #e6f1ff;
+    margin-bottom: 10px;
 }
 
-.Project, .About, .Contact {
-    max-width: 800px;
-    margin: 60px auto;
+.subtitle {
+    font-size: 20px;
+    color: #8892b0;
+    font-weight: 400;
+}
+
+/* General Section Styling */
+section {
+    max-width: 900px;
+    margin: 100px auto;
     padding: 20px;
-    color: white;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #ccd6f6;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Project Section */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #112240;
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ccd6f6;
+    border: 1px solid #133040;
+}
+
+.project-card h3 {
+    color: #64ffda; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* About Section */
+.About p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Contact */
+.Contact {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.Contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Contact li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.Contact a {
+    color: #64ffda;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.Contact a:hover {
+    text-decoration: underline;
 }

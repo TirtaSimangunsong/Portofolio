@@ -3,42 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>Tirta Simangunsong | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    <div class="NavBar">
-        <a href="#Project">Project</a>
+    <nav class="NavBar">
+        <a href="#Project">Projects</a>
         <a href="#About">About</a>
         <a href="#Contact">Contact</a>
-    </div>
+    </nav>
 
-    <div class="Judul">
+    <header class="Judul">
         <h1>Tirta Simangunsong</h1>
-    </div>
+        <p class="subtitle">A Third-Year Student at Universitas Pelita Harapan</p>
+    </header>
 
-    <div class="Project">
-        <h2>My Project</h2>
-        <li>
-            <a href="https://tirtasimangunsong.github.io/FlexboxPricingTable/" class="FlexboxPricing">Flexbox Pricing</a>
-        </li>
-        <li>
-            <a href="https://tirtasimangunsong.github.io/DiceGame/">Dice Game!</a>
-        </li>
-    </div>
-    
-    <div class="About">
-        <h2>About Me</h2>
-        <p> Hi, im curently an active student from Universitas Pelita Harapan (UPH) year 3. I just learned how to use HTML this semester.</p>
-    </div>
+    <main>
+        <section id="Project" class="Project">
+            <h2>My Projects</h2>
+            <div class="project-container">
+                <a href="https://tirtasimangunsong.github.io/FlexboxPricingTable/" target="_blank" class="project-card">
+                    <h3>Flexbox Pricing Table</h3>
+                </a>
+                <a href="https://tirtasimangunsong.github.io/DiceGame/" target="_blank" class="project-card">
+                    <h3>Dice Game!</h3>
+                </a>
+            </div>
+        </section>
+        
+        <section id="About" class="About">
+            <h2>About Me</h2>
+            <p>Hi, I'm currently an active third-year student at Universitas Pelita Harapan (UPH). I just started learning HTML, CSS, and web development this semester and I'm excited to learn more!</p>
+        </section>
+    </main>
 
-    <div class="Contact">
-        <h2>My Contact</h2>
-        <p>
-            <li> Nomor Telepon: 0813 1833 9930</li>
-            <li> IG: @ptxcr</li>
-        </p>
-    </div>
+    <footer id="Contact" class="Contact">
+        <h2>Get in Touch</h2>
+        <ul>
+            <li><strong>Phone:</strong> 0813 1833 9930</li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/ptxcr/" target="_blank">@ptxcr</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
